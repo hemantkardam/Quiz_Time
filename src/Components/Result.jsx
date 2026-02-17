@@ -8,14 +8,14 @@ function Result() {
       <div className="flex flex-col items-center">
         <img className="w-2xs" src={logo} alt="logo" />
         <h3 className="text-3xl font-bold">Result</h3>
-        <div className="w-2xl h-8 bg-gray-300 rounded mt-28 ">
+        <div className="lg:w-2xl md:w-xl w-52 h-8 bg-gray-300 rounded mt-28 ">
           <div
             className={`h-8 bg-green-500 rounded transition-all duration-1000    w-[${((10 - 5) / 10) * 100}%]`}
             style={{ width: `${(score / 10) * 100}%` }}
           ></div>
         </div>
         <p className="text-2xl font-bold mt-3">{score}/10</p>
-        <p className="text-2xl font-bold mt-20">
+        <p className="text-2xl mx-5 font-bold mt-20">
           “Keep learning, you have a good score!”
         </p>
         <Link
